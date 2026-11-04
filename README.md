@@ -1,4 +1,4 @@
-# Housing-Prediction-Challenge
+# Housing-Prediction-Challenge: Andy and Sofya
 Started by importing the libraries we needed and loading the training and testing datasets. The training set contains 1,200 houses with their actual sale prices, while the test set has 260 houses that we need to predict prices for.
 We noticed two very large houses sold for much less than their size suggest and they throw the model off, so we dropped them from the training data.
 We combined related columns into features that capture what buyers care about: total square footage, total bathrooms (half baths count as 0.5), house age, years since remodel, and total porch and deck area. We also added quality × living area, because extra square footage is worth more in a higher-quality house. MSSubClass and MoSold are numeric codes, not quantities, so we converted them to strings to treat them as categories.
